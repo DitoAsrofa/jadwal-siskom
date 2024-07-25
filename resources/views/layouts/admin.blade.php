@@ -51,7 +51,7 @@
 
         <!-- Nav Item - Profile -->
 
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
+        <li class="nav-item {{ Request::is('profile') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('profile') }}">
                 <i class="fas fa-fw fa-user"></i>
                 <span>{{ __('Profile') }}</span>
@@ -65,30 +65,30 @@
         <div class="sidebar-heading mt-2">
             {{ __('Lihat Data') }}
         </div>
-        <li class="nav-item {{ Nav::isRoute('home') }}">
+        <li class="nav-item {{ Request::is('home') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('home') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>{{ __('Jadwal') }}</span></a>
         </li>
-        <li class="nav-item {{ Nav::isRoute('data-mahasiswa') }}">
+        <li class="nav-item {{ Request::is('data-mahasiswa') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('data-mahasiswa') }}">
                 <i class="fas fa-fw fa-book"></i>
                 <span>{{ __('Mahasiswa') }}</span></a>
         </li>
 
-        <li class="nav-item {{ Nav::isRoute('data-dosen') }}">
+        <li class="nav-item {{ Request::is('data-dosen') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('data-dosen') }}">
                 <i class="fas fa-fw fa-user"></i>
                 <span>{{ __('Dosen') }}</span></a>
         </li>
 
-        <li class="nav-item {{ Nav::isRoute('data-ruangan') }}">
+        <li class="nav-item {{ Request::is('data-ruangan') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('data-ruangan') }}">
                 <i class="fa-solid fa-computer"></i>
                 <span>{{ __('Ruangan') }}</span></a>
         </li>
 
-        <li class="nav-item {{ Nav::isRoute('data-user') }}">
+        <li class="nav-item {{ Request::is('data-user') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('data-user') }}">
                 <i class="fa-solid fa-users"></i>
                 <span>{{ __('Users') }}</span></a>
@@ -98,7 +98,7 @@
         <div class="sidebar-heading mt-2">
             {{ __('Lihat Data') }}
         </div>
-        <li class="nav-item {{ Nav::isRoute('home') }}">
+        <li class="nav-item {{ Request::is('home') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('home') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>{{ __('Jadwal') }}</span></a>
